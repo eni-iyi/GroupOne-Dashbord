@@ -1,0 +1,177 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* TOP BAR */
+
+header > .topBar-Sam {
+  height: 100px;
+  width: 100%;
+  margin: 0px auto;
+  background: #35194d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT TOPBAR - ICONS  */
+header > .topBar-Sam > .menu-icons {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 30px;
+}
+
+header > .topBar-Sam > .menu-icons > .menu-icons-user {
+  display: flex;
+  line-height: 35px;
+  margin-right: 15px;
+}
+header > .topBar-Sam > .menu-icons > .menu-icons-icon:hover {
+  cursor: pointer;
+  color: #92999f;
+}
+
+header > .topBar-Sam > .menu-icons > .menu-icons-user > span {
+  margin-right: 10px;
+}
+
+header > .topBar-Sam > .menu-icons > .menu-icons-user > span > svg {
+  width: 14px;
+}
+header > .topBar-Sam > .menu-icons > .menu-icons-user > .borderSpan {
+  /* padding: 10px; */
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > .topBar-Sam > .menu-icons > .menu-icons-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+header > .topBar-Sam > .menu-icons > .menu-icons-icon > span {
+  margin-right: 15px;
+}
+
+header > .topBar-Sam > .menu-icons > .menu-icons-icon > span > svg {
+  width: 20px;
+}
+
+header > .topBar-Sam > .menu-icons > .menu-icons-icon > span > img {
+  width: 30px;
+}
+
+/* MIDDLE TOPBAR - MENU ITEMS */
+header > .topBar-Sam > .menu-items {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > .topBar-Sam > .menu-items > .item {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #92999f;
+  font-weight: 500;
+  font-size: 17px;
+}
+header > .topBar-Sam > .menu-items > .item:hover {
+  color: white;
+  cursor: pointer;
+}
+
+header > .topBar-Sam > .menu-items > .item > svg {
+  width: 20px;
+  margin: 0px 10px;
+}
+
+/* LEFT TOPBAR - MENU RIGHT ICON */
+header > .topBar-Sam > .menu-right-icon {
+  width: 10%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+header > .topBar-Sam > .menu-right-icon > .hamburger {
+  display: none;
+}
+
+header > .topBar-Sam > .menu-right-icon > .hamburger > svg:hover,
+header > .topBar-Sam > .menu-right-icon > .menuCube > svg:hover {
+  cursor: pointer;
+  color: white;
+}
+header > .topBar-Sam > .menu-right-icon > .hamburger > svg {
+  width: 25px;
+  color: white;
+}
+
+header > .topBar-Sam > .menu-right-icon > .menuCube > svg {
+  width: 25px;
+  color: #ada5e2;
+  /* fill: #ada5e2; */
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  header > .topBar-Sam > .menu-items {
+    display: none;
+  }
+
+  header > .topBar-Sam > .menu-icons > .menu-icons-user {
+    margin-left: 90px;
+  }
+
+  header > .topBar-Sam > .menu-icons > .menu-icons-user > .user1 {
+    display: none;
+  }
+
+  header > .topBar-Sam > .menu-right-icon {
+    margin-right: 30px;
+  }
+
+  header > .topBar-Sam > .menu-right-icon > .hamburger {
+    display: block;
+  }
+  header > .topBar-Sam > .menu-right-icon > .hamburger {
+    margin-right: 15px;
+  }
+}
+
+/* TABLET VIEW */
+@media (max-width: 1024px) {
+  header > .topBar-Sam > .menu-items {
+    display: none;
+  }
+
+  header > .topBar-Sam > .menu-icons > .menu-icons-user {
+    margin-left: 100px;
+  }
+
+  header > .topBar-Sam > .menu-icons > .menu-icons-user > .user1 {
+    display: none;
+  }
+
+  header > .topBar-Sam > .menu-right-icon > .hamburger {
+    display: block;
+  }
+  header > .topBar-Sam > .menu-right-icon {
+    margin-right: 35px;
+  }
+  header > .topBar-Sam > .menu-right-icon > .hamburger {
+    margin-right: 25px;
+  }
+}
