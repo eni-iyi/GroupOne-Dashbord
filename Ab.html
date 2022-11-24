@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  CSS FILES BELOW-->
+    <link rel="stylesheet" href="./css/abraham.css" />
+    <link rel="stylesheet" href="./css/dara.css" />
+    <link rel="stylesheet" href="./css/felix.css" />
+    <link rel="stylesheet" href="./css/sam.css" />
+    <title>Group One - Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER SECTION - SAM & DARA -->
+    <header>
+      <!-- Sam's Div below -->
+      <div class="topBar-Sam"></div>
+
+      <!-- Dara's Div below -->
+      <div class="topBar-Dara"></div>
+    </header>
+
+    <main>
+      <!-- SECTION ONE - FELIX AND ABRAHAM -->
+      <section class="sectionOne">
+        <!-- Felix's Div below -->
+        <div class="sectionOne-Felix"></div>
+
+        <!-- Abraham's Div below -->
+        <div class="sectionOne-Abraham">
+          <!-- Top Div -->
+          <div class="sortinvoice">
+            <div class="sort">
+              <span><b>Sort By: </b></span>
+              <select name="Sorted" id="">
+                <option value="yearly">Yearly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="weekly">weekly</option>
+                <option value="Today">Today</option>
+              </select>
+            </div>
+            <div class="overview">
+              <p>Invoice Overview</p>
+            </div>
+          </div>
+          <!-- main div -->
+          <div class="graphRevenue">
+            <div class="graph">
+              <canvas
+                id="myChart"
+                style="width: 100%; max-width: 600px; height: 70%"
+              ></canvas>
+            </div>
+            <div class="Revenue">
+              <div class="TotalRev">
+                <p>:Total Revenue</p>
+                <h1>$9,542,00</h1>
+                <p>From Jan 20, 2022 to Juli, 2022</p>
+              </div>
+              <div class="smallGraph">
+                <canvas
+                  id="myGraph"
+                  style="width: 50%; max-width: 500px"
+                ></canvas>
+                <span
+                  style="background-color: rgb(238, 9, 9); border-radius: 5px"
+                  >16.3%</span
+                >
+              </div>
+              <div class="netRev">
+                <p style="display: flex">
+                  <span> 3,526,56</span>
+                  <span style="color: green"
+                    ><iconify-icon
+                      icon="fluent-mdl2:checkbox-indeterminate"
+                      width="20"
+                    ></iconify-icon
+                  ></span>
+                </p>
+                <p style="margin-top: -15px">Net profit</p>
+                <p style="display: flex">
+                  <span>5,324,85</span>
+                  <span style="color: purple"
+                    ><span
+                      ><iconify-icon
+                        icon="fluent-mdl2:checkbox-indeterminate"
+                        width="20"
+                      ></iconify-icon></span
+                  ></span>
+                </p>
+                <p style="margin-top: -15px">Net Revenue</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      var xValues = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
+      var yValues = [90, 40, 70, 60, 55, 40, 35];
+      var barColors = "blue";
+      var yaxis = [23, 55, 78, 67, 23, 45, 21];
+
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yaxis,
+            },
+            {
+              labels: xValues,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "",
+          },
+        },
+      });
+    </script>
+
+    <script>
+      var xValues = ["0", "2", "4", "6", "8", "10", "12"];
+      var yValues = [2, 36, 22, 30, 12, 36, 35];
+      var barColors = "green";
+
+      new Chart("myGraph", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "",
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

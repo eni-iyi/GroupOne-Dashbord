@@ -1,0 +1,54 @@
+.main {
+  background-color: rgb(128, 128, 128, 0.2);
+}
+
+.sectionOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+}
+
+.sectionOne-Abraham {
+  background-color: white;
+  width: 60%;
+  height: 550px;
+  margin: 0px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.sortinvoice {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.overview {
+  font-size: 20px;
+  color: gray;
+}
+
+.graphRevenue {
+  display: flex;
+  justify-content: space-between;
+}
+.Revenue {
+  background-color: rgb(128, 128, 128, 0.2);
+  margin-bottom: 30px;
+  margin-right: 20px;
+  width: 30%;
+  border-radius: 10px;
+  padding: 0px 30px;
+}
+select {
+  border: none;
+  font-size: 16px;
+  color: grey;
+}
+select:hover {
+  cursor: pointer;
+}
+.graph{
+  width: 50%;
+}

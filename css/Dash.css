@@ -1,0 +1,22 @@
+.year{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+;
+}
+.sales{
+    font-weight: 30px;
+    font-size: 20px;
+}
+main{
+    width:100%;
+    height: 200px;
+    background-color: #f9f6fa;
+}
+@media (min-width:640px) {
+    
+}
