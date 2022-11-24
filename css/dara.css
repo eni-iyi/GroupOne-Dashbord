@@ -1,0 +1,111 @@
+@media(max-width:640px){
+.table thead{
+    display:none;
+
+}
+.every{
+    padding:0.5rem;
+}
+.table, .table tbody,.daraTr,.daraTr td{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.daraTr{
+    margin-bottom:15px;
+}
+.daraTr td{
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+}
+.daraTr td::before{
+    content:attr(data-label);
+    position: absolute;
+    left:0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+
+
+
+
+}
+
+
+
+}
+
+
+
+
+/* web styling */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.every{
+    background-color: rgb(60,29,85);
+    padding: 2rem 8rem;
+    color:white;
+    width: 100vw;
+    height: auto;
+
+}
+.everyTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.everyTop span{
+    color: rgb(172, 167, 166);
+    
+}
+.everyTop h2{
+    font-size: 1rem;
+}
+
+.daraHead{
+    color: rgb(172, 167, 166);
+    font-size: 1rem;
+    text-align: right;
+}
+
+
+
+
+.table{
+    width: 100%;
+    height: 5.5rem;
+    background-color:rgba(77, 48, 107, 0.747);
+    text-align: right;
+     margin-top: 1.5rem;
+    
+
+}
+
+.table .daraHead,.daraTr td{
+    border:1px solid #000;
+    border-collapse:collapse;
+    padding:10px;
+    border-color:rgba(77, 48, 107, 0.1);
+    border-right-color:rgba(175, 178, 180,0.1);
+}
+.daraTr td,.daraHead{
+    padding-right: 2rem;
+}
+.daraTr td{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.6rem;
+    
+
+}
+
+
+    
