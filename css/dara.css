@@ -11,7 +11,7 @@ body .every{
     width: 100%;
     height: auto;
 }
-table tr{
+.table tr{
     margin-bottom:15px;
 }
 .table td{
@@ -19,7 +19,7 @@ table tr{
     padding-left: 50%;
     position: relative;
 }
-table td::before{
+.table td::before{
     content:attr(data-label);
     position: absolute;
     left:0;
@@ -79,7 +79,7 @@ th{
 
 
 
-table{
+.table{
     width: 100%;
     height: 5.5rem;
     background-color:rgba(77, 48, 107, 0.747);
