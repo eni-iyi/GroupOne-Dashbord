@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="./css/dara.css" />
     <link rel="stylesheet" href="./css/felix.css" />
     <link rel="stylesheet" href="./css/sam.css" />
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <title>Group One - Dashboard</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"
+      asyn
+    ></script>
   </head>
   <body>
     <!-- HEADER SECTION - SAM & DARA -->
@@ -293,11 +300,545 @@
       <!-- SECTION ONE - FELIX AND ABRAHAM -->
       <section class="sectionOne">
         <!-- Felix's Div below -->
+
         <div class="sectionOne-Felix"></div>
 
         <!-- Abraham's Div below -->
         <div class="sectionOne-Abraham"></div>
       </section>
+
+      <!-- SECTION TWO -->
+      <section class="sectionTwo">
+        <!-- First Div -->
+        <div class="best-selling-product">
+          <!-- products Title -->
+          <div class="products-title">
+            <div class="products-arrows">
+              <span
+                style="
+                  width: 25px;
+                  border: 1px solid #776acf;
+                  display: flex;
+                  padding: 5px;
+                  border-radius: 5px;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+                  />
+                </svg>
+              </span>
+              <span
+                style="
+                  width: 25px;
+                  border: 1px solid #776acf;
+                  display: flex;
+                  padding: 5px;
+                  border-radius: 5px;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="products-heading"><h3>Best Selling Product</h3></div>
+          </div>
+          <!-- products -->
+          <div class="products">
+            <div class="best-product1">
+              <div class="shoe">
+                <img src="./img/img-.png" alt="" width="200px" />
+              </div>
+              <div class="content">
+                <p>Trendy Men</p>
+                <p>Sports Running</p>
+                <p>Running Shoes</p>
+              </div>
+              <div class="dollars">
+                <p>
+                  <span style="color: #776acf;">$520.00</span>
+                  <span><del>$740</del></span>
+                </p>
+              </div>
+              <div class="order">
+                <a href="/" class="orderNow">Buy Now</a>
+              </div>
+            </div>
+            <div class="best-product2">
+              <div class="shoe">
+                <img src="./img/img-2.png" alt="" width="200px" />
+              </div>
+              <div class="content">
+                <p>Combo Pack of 2</p>
+                <p>Sports Shoes</p>
+                <p>Running Shoes</p>
+              </div>
+              <div class="dollars">
+                <p>
+                  <span style="color: #776acf;">$280.00</span>
+                  <span><del>$320</del></span>
+                </p>
+              </div>
+              <div class="order">
+                <a href="/" class="orderNow">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Div -->
+        <div class="product-tracking">
+          <div class="tracking">
+            <table style="width: 100%; text-align: center;">
+              <thead>
+                <th><small>View All</small></th>
+                <th>Product Tracking</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span><b>Nov 03</b></span>
+                    <br />
+                    <span>Day ago 1</span>
+                  </td>
+                  <td>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                      "
+                    >
+                      <span>...der Received</span>
+                      <span class="tracking-icons">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span><b>Nov 03</b></span>
+                    <br />
+                    <span>Yesterday</span>
+                  </td>
+                  <td>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                      "
+                    >
+                      <span>...nager Posted</span>
+                      <span class="tracking-icons">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span><b>Nov 04</b></span>
+                    <br />
+                    <span>Hour ago 6</span>
+                  </td>
+                  <td>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                      "
+                    >
+                      <span>...nding Order</span>
+                      <span class="tracking-icons">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span><b>Nov 04</b></span>
+                    <br />
+                    <span>Today</span>
+                  </td>
+                  <td>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                      "
+                    >
+                      <span>Order Received</span>
+                      <span class="tracking-icons">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="graph">
+            <canvas id="myGraph" style="width: 90%; max-width: 500px;"></canvas>
+          </div>
+        </div>
+
+        <!-- Third Div -->
+        <div class="sales-by-social">
+          <table style="width: 100%;">
+            <thead>
+              <th><small>Monthly</small></th>
+              <th style="text-align: right;">
+                Sales By Social
+                <br />
+                Source
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <div><b>$47,526.00</b></div>
+                    <div class="rating">
+                      <span>50%</span>
+                      <span class="arrow-upward">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: end;
+                    "
+                  >
+                    <span>
+                      <b>... 4,562 ...Ads</b>
+                      <br />
+                      <small>4.2k Like Shoes</small>
+                    </span>
+                    <span class="socials-icons">
+                      <iconify-icon
+                        icon="fe:facebook"
+                        style="color: #776acf;"
+                      ></iconify-icon>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <div><b>$52,526.00</b></div>
+                    <div class="rating">
+                      <span>45%</span>
+                      <span class="arrow-upward">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: end;
+                    "
+                  >
+                    <span>
+                      <b>... 1,652 ...Ads</b>
+                      <br />
+                      <small>3.7k Like T-Shirt</small>
+                    </span>
+                    <span class="socials-icons">
+                      <iconify-icon
+                        icon="ant-design:twitter-square-filled"
+                        style="color: #5fd0f3;"
+                      ></iconify-icon>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <div><b>$52,785.00</b></div>
+                    <div class="rating" style="background-color: #e1665d;">
+                      <span>30%</span>
+                      <span class="arrow-upward">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: end;
+                    "
+                  >
+                    <span>
+                      <b>... 4,562 ...Ads</b>
+                      <br />
+                      <small>4.2k Like Shoes</small>
+                    </span>
+                    <span class="socials-icons">
+                      <iconify-icon
+                        icon="ant-design:twitter-square-filled"
+                        style="color: #e1665d;"
+                      ></iconify-icon>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <div><b>$86,456.00</b></div>
+                    <div class="rating">
+                      <span>35%</span>
+                      <span class="arrow-upward">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: end;
+                    "
+                  >
+                    <span>
+                      <b>... 6,965 ...Ads</b>
+                      <br />
+                      <small>3.7k Like Chairs</small>
+                    </span>
+                    <span class="socials-icons">
+                      <iconify-icon
+                        icon="ant-design:twitter-square-filled"
+                        style="color: #e1665d;"
+                      ></iconify-icon>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <div><b>$92,452.00</b></div>
+                    <div class="rating">
+                      <span>35%</span>
+                      <span class="arrow-upward">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: end;
+                    "
+                  >
+                    <span>
+                      <b>... 8,532 ...Ads</b>
+                      <br />
+                      <small>4.2k Like Chairs</small>
+                    </span>
+                    <span class="socials-icons">
+                      <iconify-icon
+                        icon="ant-design:twitter-square-filled"
+                        style="color: #776acf;"
+                      ></iconify-icon>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
+
+    <!-- Script Link -->
+    <script>
+      var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+      var yValues = [38, 32, 40, 34, 39]
+      var barColors = '#776acf'
+
+      new Chart('myGraph', {
+        type: 'line',
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: '',
+          },
+        },
+      })
+    </script>
   </body>
 </html>
