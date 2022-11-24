@@ -1,23 +1,23 @@
-.main {
-  background-color: rgb(128, 128, 128, 0.2);
-}
-
 .sectionOne {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 40px;
   /* border: 1px solid blue; */
   border-radius: 10px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .sectionOne-Abraham {
   background-color: white;
   width: 60%;
-  height: 550px;
+  /* height: 550px; */
   margin: 0px;
-  border: 1px solid red;
-  border-radius: 10px;
+  background-color: white;
+  border: 2px solid #f9f6fa;
+  border-radius: 20px;
+  padding: 30px;
 }
 .sortinvoice {
   display: flex;
@@ -49,6 +49,6 @@ select {
 select:hover {
   cursor: pointer;
 }
-.graph{
+.graph {
   width: 50%;
 }
