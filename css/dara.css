@@ -3,23 +3,23 @@
     display:none;
 
 }
-body .every{
+.every{
     padding:0.5rem;
 }
-.table, table tbody,.table tr,.table td{
+.table, .table tbody,.daraTr,.daraTr td{
     display: block;
     width: 100%;
     height: auto;
 }
-.table tr{
+.daraTr{
     margin-bottom:15px;
 }
-.table td{
+.daraTr td{
     text-align: right;
     padding-left: 50%;
     position: relative;
 }
-.table td::before{
+.daraTr td::before{
     content:attr(data-label);
     position: absolute;
     left:0;
@@ -70,7 +70,7 @@ body .every{
     font-size: 1rem;
 }
 
-th{
+.daraHead{
     color: rgb(172, 167, 166);
     font-size: 1rem;
     text-align: right;
@@ -89,17 +89,17 @@ th{
 
 }
 
-.table th,.table td{
+.table .daraHead,.daraTr td{
     border:1px solid #000;
     border-collapse:collapse;
     padding:10px;
     border-color:rgba(77, 48, 107, 0.1);
     border-right-color:rgba(175, 178, 180,0.1);
 }
-td,th{
+.daraTr td,.daraHead{
     padding-right: 2rem;
 }
-td{
+.daraTr td{
     margin-top: 0;
     padding-top: 0;
     font-size: 1.6rem;
