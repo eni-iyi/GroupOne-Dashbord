@@ -19,6 +19,7 @@
       asyn
     ></script>
   </head>
+
   <body>
     <!-- HEADER SECTION - SAM & DARA -->
     <header>
@@ -47,7 +48,7 @@
               <img
                 src="./img/WIN_20221007_12_19_44_Pro.jpg"
                 alt=""
-                style="width: 90%; height: 90%; border-radius: 50%;"
+                style="width: 90%; height: 90%; border-radius: 50%"
               />
             </span>
           </div>
@@ -296,50 +297,39 @@
       <div class="topBar-Dara">
         <section class="every">
           <section class="everyTop">
-              <div><h2>Welcome<span> > Dashboard</span></h2></div>
-              <div><span></span><h3>!Welcome</h3></div>
+            <div>
+              <h2>Welcome<span> > Dashboard</span></h2>
+            </div>
+            <div>
+              <span></span>
+              <h3>!Welcome</h3>
+            </div>
           </section>
-          
+
           <section>
-              <table class="table">
-                  <caption></caption>
-                  
-                      <tr>
-                          <th class="daraHead"> Annual Deals </th>
-                          <th class="daraHead">Daily Average Income</th>
-                          <th class="daraHead">Sales Forecast</th>
-                          <th class="daraHead">Lead Coversation</th>
-                          <th class="daraHead">Annual Profit</th>
-                          <th class="daraHead">Campaign Sent</th>
-              
-                      </tr>
-              
-                  
-              
-                  
-              
-                      <tr class="daraTr">
-                          <td data-label="Annual Deals">2,659</td>
-                          <td data-label="Daily Average Income">$1,596.5</td>
-                          <td data-label="Sales Forecast">75.35%</td>
-                          <td data-label="Lead Forecast">32.89%</td>
-                          <td data-label="Annual Profit">$489.4</td>
-                          <td data-label="Campaign Sent">197</td>
-                      </tr>
-                      
-                         
-                  
-              </table>
+            <table class="table">
+              <caption></caption>
+
+              <tr>
+                <th class="daraHead">Annual Deals</th>
+                <th class="daraHead">Daily Average Income</th>
+                <th class="daraHead">Sales Forecast</th>
+                <th class="daraHead">Lead Coversation</th>
+                <th class="daraHead">Annual Profit</th>
+                <th class="daraHead">Campaign Sent</th>
+              </tr>
+
+              <tr class="daraTr">
+                <td data-label="Annual Deals">2,659</td>
+                <td data-label="Daily Average Income">$1,596.5</td>
+                <td data-label="Sales Forecast">75.35%</td>
+                <td data-label="Lead Forecast">32.89%</td>
+                <td data-label="Annual Profit">$489.4</td>
+                <td data-label="Campaign Sent">197</td>
+              </tr>
+            </table>
           </section>
-          </section>
-              
-
-
-
-
-
-
-
+        </section>
       </div>
     </header>
 
@@ -351,7 +341,72 @@
         <div class="sectionOne-Felix"></div>
 
         <!-- Abraham's Div below -->
-        <div class="sectionOne-Abraham"></div>
+        <div class="sectionOne-Abraham">
+          <!-- Top Div -->
+          <div class="sortinvoice">
+            <div class="sort">
+              <span><b>Sort By: </b></span>
+              <select name="Sorted" id="">
+                <option value="yearly">Yearly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="weekly">weekly</option>
+                <option value="Today">Today</option>
+              </select>
+            </div>
+            <div class="overview">
+              <p>Invoice Overview</p>
+            </div>
+          </div>
+          <!-- main div -->
+          <div class="graphRevenue">
+            <div class="graph">
+              <canvas
+                id="myChart"
+                style="width: 100%; max-width: 600px; height: 70%"
+              ></canvas>
+            </div>
+            <div class="Revenue">
+              <div class="TotalRev">
+                <p>:Total Revenue</p>
+                <h1>$9,542,00</h1>
+                <p>From Jan 20, 2022 to Juli, 2022</p>
+              </div>
+              <div class="smallGraph">
+                <canvas
+                  id="myGraph"
+                  style="width: 50%; max-width: 500px"
+                ></canvas>
+                <span
+                  style="background-color: rgb(238, 9, 9); border-radius: 5px"
+                  >16.3%</span
+                >
+              </div>
+              <div class="netRev">
+                <p style="display: flex">
+                  <span> 3,526,56</span>
+                  <span style="color: green"
+                    ><iconify-icon
+                      icon="fluent-mdl2:checkbox-indeterminate"
+                      width="20"
+                    ></iconify-icon
+                  ></span>
+                </p>
+                <p style="margin-top: -15px">Net profit</p>
+                <p style="display: flex">
+                  <span>5,324,85</span>
+                  <span style="color: purple"
+                    ><span
+                      ><iconify-icon
+                        icon="fluent-mdl2:checkbox-indeterminate"
+                        width="20"
+                      ></iconify-icon></span
+                  ></span>
+                </p>
+                <p style="margin-top: -15px">Net Revenue</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- SECTION TWO -->
@@ -425,7 +480,7 @@
               </div>
               <div class="dollars">
                 <p>
-                  <span style="color: #776acf;">$520.00</span>
+                  <span style="color: #776acf">$520.00</span>
                   <span><del>$740</del></span>
                 </p>
               </div>
@@ -444,7 +499,7 @@
               </div>
               <div class="dollars">
                 <p>
-                  <span style="color: #776acf;">$280.00</span>
+                  <span style="color: #776acf">$280.00</span>
                   <span><del>$320</del></span>
                 </p>
               </div>
@@ -458,7 +513,7 @@
         <!-- Second Div -->
         <div class="product-tracking">
           <div class="tracking">
-            <table style="width: 100%; text-align: center;">
+            <table style="width: 100%; text-align: center">
               <thead>
                 <th><small>View All</small></th>
                 <th>Product Tracking</th>
@@ -604,16 +659,16 @@
             </table>
           </div>
           <div class="graph">
-            <canvas id="myGraph" style="width: 90%; max-width: 500px;"></canvas>
+            <canvas id="myGraph" style="width: 90%; max-width: 500px"></canvas>
           </div>
         </div>
 
         <!-- Third Div -->
         <div class="sales-by-social">
-          <table style="width: 100%;">
+          <table style="width: 100%">
             <thead>
               <th><small>Monthly</small></th>
-              <th style="text-align: right;">
+              <th style="text-align: right">
                 Sales By Social
                 <br />
                 Source
@@ -661,7 +716,7 @@
                     <span class="socials-icons">
                       <iconify-icon
                         icon="fe:facebook"
-                        style="color: #776acf;"
+                        style="color: #776acf"
                       ></iconify-icon>
                     </span>
                   </div>
@@ -708,7 +763,7 @@
                     <span class="socials-icons">
                       <iconify-icon
                         icon="ant-design:twitter-square-filled"
-                        style="color: #5fd0f3;"
+                        style="color: #5fd0f3"
                       ></iconify-icon>
                     </span>
                   </div>
@@ -718,7 +773,7 @@
                 <td>
                   <div>
                     <div><b>$52,785.00</b></div>
-                    <div class="rating" style="background-color: #e1665d;">
+                    <div class="rating" style="background-color: #e1665d">
                       <span>30%</span>
                       <span class="arrow-upward">
                         <svg
@@ -755,7 +810,7 @@
                     <span class="socials-icons">
                       <iconify-icon
                         icon="ant-design:twitter-square-filled"
-                        style="color: #e1665d;"
+                        style="color: #e1665d"
                       ></iconify-icon>
                     </span>
                   </div>
@@ -802,7 +857,7 @@
                     <span class="socials-icons">
                       <iconify-icon
                         icon="ant-design:twitter-square-filled"
-                        style="color: #e1665d;"
+                        style="color: #e1665d"
                       ></iconify-icon>
                     </span>
                   </div>
@@ -849,7 +904,7 @@
                     <span class="socials-icons">
                       <iconify-icon
                         icon="ant-design:twitter-square-filled"
-                        style="color: #776acf;"
+                        style="color: #776acf"
                       ></iconify-icon>
                     </span>
                   </div>
@@ -861,14 +916,44 @@
       </section>
     </main>
 
-    <!-- Script Link -->
     <script>
-      var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
-      var yValues = [38, 32, 40, 34, 39]
-      var barColors = '#776acf'
+      var xValues = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
+      var yValues = [90, 40, 70, 60, 55, 40, 35];
+      var barColors = "blue";
+      var yaxis = [23, 55, 78, 67, 23, 45, 21];
 
-      new Chart('myGraph', {
-        type: 'line',
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yaxis,
+            },
+            {
+              labels: xValues,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "",
+          },
+        },
+      });
+    </script>
+
+    <script>
+      var xValues = ["0", "2", "4", "6", "8", "10", "12"];
+      var yValues = [2, 36, 22, 30, 12, 36, 35];
+      var barColors = "green";
+
+      new Chart("myGraph", {
+        type: "line",
         data: {
           labels: xValues,
           datasets: [
@@ -882,10 +967,10 @@
           legend: { display: false },
           title: {
             display: true,
-            text: '',
+            text: "",
           },
         },
-      })
+      });
     </script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+.year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+}
+.sales {
+  font-weight: 30px;
+  font-size: 20px;
+}
+.main {
+  width: 500px;
+  height: 100%;
+  /* background-color: #f9f6fa; */
+  background-color: white;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  padding-left: 10px;
+}
+@media (max-width: 375px) {
+  .year {
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+  .main {
+    width: 90vw;
+    height: 95vh;
+  }
+}
