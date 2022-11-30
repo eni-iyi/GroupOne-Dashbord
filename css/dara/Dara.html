@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link rel="stylesheet" href="/css/dara/daradara.css">
 </head>
 <body>
 <section class="tableHold">
-    <div class="tabletop">
-        <div><p>>Monthly</p></div>
-        <div><p>Recent Orders</p></div>
-    </div>
+    
 
-
+<div class="tableContainer">
+    
+    
     <table class="table">
+
+        <div class="tableTop">
+            <div><p class="monthly">>Monthly</p></div>
+             
+            <div><p class="recentOrders">Recent Orders</p></div>
+            
+            
+        </div>
+        
+
+
         <thead>
             <tr>
                 <th>Action</th>
@@ -30,9 +41,59 @@
 
         <tbody>
             <tr>
-                <td><img class="dottedMenu" src="/img/dotted menu.jfif" alt=""></td>
-                <td></td>
-                <td class="imageText"><p>Avaialable</p>
+                <td>
+                    <div class="dotteddiv">
+                        
+                        <img class="dottedMenu" src="/img/dotted menu.jfif" alt="">
+                        
+                        
+                    </div>
+                </td>
+
+
+
+                <td>
+                    <div class="chartdiv">
+                        <canvas id="myChart" class="canva" style="width:10rem"></canvas>
+                        
+                        
+                        <script>
+                        var xValues = [50,60,70,80,90,100,110,120,130,140,135];
+                        var yValues = [7,8,8,9,10,9,10,11,14,13,9];
+                        
+                        new Chart("myChart", {
+                          type: "line",
+                          data: {
+                            labels: xValues,
+                            datasets: [{
+                                
+                              fill: false,
+                              lineTension: 0.5,
+                              pointRadius:1.5,
+                              backgroundColor: "rgba(0,0,255,1.0)",
+                              borderColor: "rgba(0,0,255,0.1)",
+                              data: yValues
+                            }]
+                          },
+                          options: {
+                            legend: {display: false},
+                            hover: {
+                            mode: 'nearest',
+                            intersect: true
+                          },
+                            scales: {
+                              yAxes: [{ticks: {display:false}}],
+                              xAxes:[{ticks:{display:false}}],
+                            }
+                          }
+                        });
+                        </script>
+                        </div>
+                </td>
+
+
+
+                <td class="imageText"><p>Available</p>
                     <div class="customerCheckbox">
                         <img src="/img/greencheck box.jfif" alt="">
                     </div></td>
@@ -55,7 +116,7 @@
             </tr>
 
 
-
+ 
 
 
 
@@ -63,9 +124,58 @@
 
 
             <tr>
-                <td><img class="dottedMenu" src="/img/dotted menu.jfif" alt=""></td>
-                <td></td>
-                <td class="imageText"><p>Avaialable</p>
+                <td>
+                    <div class="dotteddiv">
+                        <img class="dottedMenu" src="/img/dotted menu.jfif" alt="">
+                    </div>
+                </td>
+
+
+
+
+                <td>
+                    <div class="chartdiv">
+                        <canvas id="myChart4" class="canva" style="width:10rem"></canvas>
+                        
+                        
+                        <script>
+                        var xValues = [50,60,70,80,90,100,110,120,130,140,120];
+                        var yValues = [7,8,9,7,8,9,10,11,14,8,15];
+                        
+                        new Chart("myChart4", {
+                          type: "line",
+                          data: {
+                            labels: xValues,
+                            datasets: [{
+                                
+                              fill: false,
+                              lineTension: 0.5,
+                              pointRadius:1.5,
+                              backgroundColor: "rgba(0,0,255,1.0)",
+                              borderColor: "rgba(0,0,255,0.1)",
+                              data: yValues
+                            }]
+                          },
+                          options: {
+                            legend: {display: false},
+                            hover: {
+                            mode: 'nearest',
+                            intersect: true
+                          },
+                            scales: {
+                              yAxes: [{ticks: {display:false}}],
+                              xAxes:[{ticks:{display:false}}],
+                            }
+                          }
+                        });
+                        </script>
+                        </div>
+                </td>
+
+
+
+
+                <td class="imageText"><p>Available</p>
                     <div class="customerCheckbox">
                         <img src="/img/greencheck box.jfif" alt="">
                     </div></td>
@@ -96,9 +206,54 @@
 
 
             <tr>
-                <td><img class="dottedMenu" src="/img/dotted menu.jfif" alt=""></td>
-                <td></td>
-                <td class="imageText"><p>Out of Stock</p>
+                <td>
+                    <div class="dotteddiv">
+                        <img class="dottedMenu" src="/img/dotted menu.jfif" alt="">
+                    </div>
+                </td>
+
+
+                <td>
+                    <div class="chartdiv">
+                        <canvas id="myChart3" class="canva" style="width:10rem"></canvas>
+                        
+                        
+                        <script>
+                        var xValues = [50,60,70,80,40,100,110,120,130,140,150];
+                        var yValues = [7,8,8,8,9,9,10,11,14,14,15];
+                        
+                        new Chart("myChart3", {
+                          type: "line",
+                          data: {
+                            labels: xValues,
+                            datasets: [{
+                                
+                              fill: false,
+                              lineTension: 0.5,
+                              pointRadius:1.5,
+                              backgroundColor: "rgba(0,0,255,1.0)",
+                              borderColor: "rgba(0,0,255,0.1)",
+                              data: yValues
+                            }]
+                          },
+                          options: {
+                            legend: {display: false},
+                            hover: {
+                            mode: 'nearest',
+                            intersect: true
+                          },
+                            scales: {
+                              yAxes: [{ticks: {display:false}}],
+                              xAxes:[{ticks:{display:false}}],
+                            }
+                          }
+                        });
+                        </script>
+                        </div>
+                </td>
+
+
+                <td class="imageText"><p> Out of Stock</p>
                     <div class="customerCheckbox">
                         <img src="/img/red checkbox.png" alt="">
                     </div></td>
@@ -128,9 +283,58 @@
 
 
             <tr>
-                <td><img class="dottedMenu" src="/img/dotted menu.jfif" alt=""></td>
-                <td></td>
-                <td class="imageText"><p>Avaialable</p>
+                <td>
+                    <div class="dotteddiv">
+                        <img class="dottedMenu" src="/img/dotted menu.jfif" alt="">
+                    </div>
+                </td>
+
+
+                <td>
+                    <div class="chartdiv">
+                        <canvas id="myChart2" class="canva" style="width:10rem"></canvas>
+                        
+                        
+                        
+                        <script>
+                        var xValues = [50,60,70,45,90,100,110,120,130,140,150];
+                        var yValues = [7,8,8,9,12,9,10,12,14,13,15];
+                        
+                        new Chart("myChart2", {
+                          type: "line",
+                          data: {
+                            labels: xValues,
+                            datasets: [{
+                                
+                              fill: false,
+                              lineTension: 0.5,
+                              pointRadius:1.5,
+                              backgroundColor: "rgba(0,0,255,1.0)",
+                              borderColor: "rgba(0,0,255,0.1)",
+                              data: yValues
+                            }]
+                          },
+                          options: {
+                            legend: {display: false},
+                            hover: {
+                            mode: 'nearest',
+                            intersect: true
+                          },
+                            scales: {
+                              yAxes: [{ticks: {display:false}}],
+                              xAxes:[{ticks:{display:false}}],
+                            }
+                          }
+                        });
+                        </script>
+                        </div>
+
+
+
+
+
+                </td>
+                <td class="imageText"><p>Available</p>
                     <div class="customerCheckbox">
                         <img src="/img/greencheck box.jfif" alt="">
                     </div></td>
@@ -158,9 +362,53 @@
 
 
             <tr>
-                <td><img class="dottedMenu" src="/img/dotted menu.jfif" alt=""></td>
-                <td></td>
-                <td class="imageText"><p>Avaialable</p>
+                <td>
+                    <div class="dotteddiv">
+                        <img class="dottedMenu" src="/img/dotted menu.jfif" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="chartdiv">
+                        <canvas id="myChart1" class="canva" style="width:10rem"></canvas>
+                        
+                        
+                        <script>
+                        var xValues = [50,60,70,80,90,100,110,120,130,140,150];
+                        var yValues = [7,8,8,7,9,14,10,13,14,14,15];
+                        
+                        new Chart("myChart1", {
+                          type: "line",
+                          data: {
+                            labels: xValues,
+                            datasets: [{
+                                
+                              fill: false,
+                              lineTension: 0.5,
+                              pointRadius:1.5,
+                              backgroundColor: "rgba(0,0,255,1.0)",
+                              borderColor: "rgba(0,0,255,0.1)",
+                              data: yValues
+                            }]
+                          },
+                          options: {
+                            legend: {display: false},
+                            hover: {
+                            mode: 'nearest',
+                            intersect: true
+                          },
+                            scales: {
+                              yAxes: [{ticks: {display:false}}],
+                              xAxes:[{ticks:{display:false}}],
+                            }
+                          }
+                        });
+                        </script>
+                        </div>
+
+
+
+                </td>
+                <td class="imageText"><div><p>Out of Stock</p></div>
                     <div class="customerCheckbox">
                         <img src="/img/red checkbox.png" alt="">
                     </div></td>
@@ -185,8 +433,13 @@
 
         </tbody>
     </table>
-
+</div>
 </section>
+
+
+
+
+
 
 </body>
 </html>
