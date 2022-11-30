@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/Dash.css">
+    <link rel="stylesheet" href="./css/Dash.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   </head>
   <body>
+
+    
     <div class="main">
-       <div class="year">
+      <div class="year">
         <div class="year1">
-          <span style="font-weight: bold;">Year:</span>
+          <span style="font-weight: bold">Year:</span>
           <select name="" id="">
             <option value="">2022</option>
             <option value="">2019</option>
@@ -23,45 +25,48 @@
         <div class="sales">
           <p>Sales Revenue</p>
         </div>
-       </div>
-        <div class="map">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player
-            src="https://assets5.lottiefiles.com/packages/lf20_1epnq1b8.json"
-            background="transparent"
-            speed="1"
-            style="width: 300px; height: 300px"
-            loop
-            autoplay
-          ></lottie-player>
-        </div>
+      </div>
+      <div class="map">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://assets5.lottiefiles.com/packages/lf20_1epnq1b8.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
       <div class="Horizotal">
-        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        <canvas id="myChart_" style="width: 100%; max-width: 600px"></canvas>
       </div>
     </div>
 
     <script>
-        var xValues = ["Canada", "Rusia", "Brazil", "USA", "Egypt"];
-        var yValues = [1040, 1320, 1560, 1280, 1480];
-        var barColors = "#776acf"
-        
-        new Chart("myChart", {
-          type: "horizontalBar",
-          data: {
+      var xValues = ["Canada", "Rusia", "Brazil", "USA", "Egypt"];
+      var yValues = [1040, 1320, 1560, 1280, 1480];
+      var barColors = "#776acf";
+
+      new Chart("myChart_", {
+        type: "horizontalBar",
+        data: {
           labels: xValues,
-          datasets: [{
-            backgroundColor: barColors,
-            data: yValues
-          }]
-        },
-          options: {
-            legend: {display: false},
-            title: {
-              display: true,
-              text: ""
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
             },
-          }
-        });
-        </script>
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "",
+          },
+        },
+      });
+    </script>
+
   </body>
 </html>

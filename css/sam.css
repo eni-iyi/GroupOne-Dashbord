@@ -234,7 +234,7 @@ main > .sectionTwo > .best-selling-product > .products {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 /* MOBILE */
 @media (max-width: 768px) {
@@ -256,7 +256,7 @@ main > .sectionTwo > .best-selling-product > .products > .best-product2 {
   align-items: center;
   border: 2px solid #f9f6fa;
   border-radius: 15px;
-  padding: 35px 0px;
+  padding: 55px 0px;
 }
 
 @media (max-width: 768px) {
@@ -305,7 +305,7 @@ main > .sectionTwo > .product-tracking {
   border: 2px solid #f9f6fa;
   border-radius: 15px;
   padding: 20px;
-  height: 450px;
+  height: 550px;
 }
 table th {
   font-size: 18px;

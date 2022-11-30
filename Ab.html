@@ -29,7 +29,9 @@
       <!-- SECTION ONE - FELIX AND ABRAHAM -->
       <section class="sectionOne">
         <!-- Felix's Div below -->
-        <div class="sectionOne-Felix"></div>
+        <div class="sectionOne-Felix">
+          <h1>FELIX'S SECTION</h1>
+        </div>
 
         <!-- Abraham's Div below -->
         <div class="sectionOne-Abraham">
@@ -64,18 +66,22 @@
               </div>
               <div class="smallGraph">
                 <canvas
-                  id="myGraph"
+                  id="lineGraph"
                   style="width: 50%; max-width: 500px"
                 ></canvas>
                 <span
-                  style="background-color: rgb(238, 9, 9); color:white; border-radius: 5px"
+                  style="
+                    background-color: rgb(238, 9, 9);
+                    color: white;
+                    border-radius: 5px;
+                  "
                   >16.3%<iconify-icon
                     icon="material-symbols:arrow-downward"
                     style="color: white"
                   ></iconify-icon>
                 </span>
               </div>
-              <div class="netRev">
+              <div class="netRev" style="margin-top: 50px">
                 <p style="display: flex">
                   <span style="margin-bottom: 7%"> 3,526,56</span>
                   <span style="color: green"
@@ -140,7 +146,7 @@
       var yValues = [2, 36, 22, 30, 12, 36, 35];
       var barColors = "#159947";
 
-      new Chart("myGraph", {
+      new Chart("lineGraph", {
         type: "line",
         data: {
           labels: xValues,

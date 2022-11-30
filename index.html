@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/dara.css" />
     <link rel="stylesheet" href="./css/felix.css" />
     <link rel="stylesheet" href="./css/sam.css" />
+    <link rel="stylesheet" href="./css/Dash.css" />
 
     <!-- iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
@@ -337,8 +338,9 @@
       <!-- SECTION ONE - FELIX AND ABRAHAM -->
       <section class="sectionOne">
         <!-- Felix's Div below -->
-
-        <div class="sectionOne-Felix"></div>
+        <div class="sectionOne-Felix">
+          <h1>FELIX'S SECTION</h1>
+        </div>
 
         <!-- Abraham's Div below -->
         <div class="sectionOne-Abraham">
@@ -373,17 +375,24 @@
               </div>
               <div class="smallGraph">
                 <canvas
-                  id="myGraph"
+                  id="lineGraph"
                   style="width: 50%; max-width: 500px"
                 ></canvas>
                 <span
-                  style="background-color: rgb(238, 9, 9); border-radius: 5px"
-                  >16.3%</span
-                >
+                  style="
+                    background-color: rgb(238, 9, 9);
+                    color: white;
+                    border-radius: 5px;
+                  "
+                  >16.3%<iconify-icon
+                    icon="material-symbols:arrow-downward"
+                    style="color: white"
+                  ></iconify-icon>
+                </span>
               </div>
-              <div class="netRev">
+              <div class="netRev" style="margin-top: 50px">
                 <p style="display: flex">
-                  <span> 3,526,56</span>
+                  <span style="margin-bottom: 7%"> 3,526,56</span>
                   <span style="color: green"
                     ><iconify-icon
                       icon="fluent-mdl2:checkbox-indeterminate"
@@ -393,7 +402,7 @@
                 </p>
                 <p style="margin-top: -15px">Net profit</p>
                 <p style="display: flex">
-                  <span>5,324,85</span>
+                  <span style="margin-top: 1%">5,324,85</span>
                   <span style="color: purple"
                     ><span
                       ><iconify-icon
@@ -402,7 +411,7 @@
                       ></iconify-icon></span
                   ></span>
                 </p>
-                <p style="margin-top: -15px">Net Revenue</p>
+                <p style="margin-top: -px">Net Revenue</p>
               </div>
             </div>
           </div>
@@ -914,8 +923,81 @@
           </table>
         </div>
       </section>
+
+      <!-- SECTION THREE -->
+      <div class="sectionThree">
+        <div class="dara-3"></div>
+
+        <!-- AB's -->
+        <div class="ab-3">
+          <div class="main">
+            <div class="year">
+              <div class="year1">
+                <span style="font-weight: bold">Year:</span>
+                <select name="" id="">
+                  <option value="">2022</option>
+                  <option value="">2019</option>
+                  <option value="">2020</option>
+                  <option value="">2021</option>
+                </select>
+              </div>
+              <div class="sales">
+                <p>Sales Revenue</p>
+              </div>
+            </div>
+            <div class="map">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="https://assets5.lottiefiles.com/packages/lf20_1epnq1b8.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div class="Horizotal">
+              <canvas
+                id="myChart_"
+                style="width: 100%; max-width: 600px"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        style="height: 100px; background-color: aliceblue; margin-top: 50px"
+      ></footer>
     </main>
 
+    <script>
+      var xValues = ["0", "2", "4", "6", "8", "10", "12"];
+      var yValues = [2, 36, 22, 30, 12, 36, 35];
+      var barColors = "green";
+
+      new Chart("myGraph", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "",
+          },
+        },
+      });
+    </script>
+
+    <!-- abraham's graph -->
     <script>
       var xValues = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
       var yValues = [90, 40, 70, 60, 55, 40, 35];
@@ -950,10 +1032,55 @@
     <script>
       var xValues = ["0", "2", "4", "6", "8", "10", "12"];
       var yValues = [2, 36, 22, 30, 12, 36, 35];
-      var barColors = "green";
+      var barColors = "#159947";
 
-      new Chart("myGraph", {
+      new Chart("lineGraph", {
         type: "line",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            xAxes: [
+              {
+                display: false,
+                gridLines: {
+                  drawBorder: false,
+                  display: false,
+                },
+              },
+            ],
+            yAxes: [
+              {
+                display: false,
+                gridLines: {
+                  display: false,
+                },
+              },
+            ],
+          },
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "",
+          },
+        },
+      });
+    </script>
+
+    <script>
+      var xValues = ["Canada", "Rusia", "Brazil", "USA", "Egypt"];
+      var yValues = [1040, 1320, 1560, 1280, 1480];
+      var barColors = "#776acf";
+
+      new Chart("myChart_", {
+        type: "horizontalBar",
         data: {
           labels: xValues,
           datasets: [

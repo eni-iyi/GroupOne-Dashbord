@@ -9,9 +9,29 @@
   margin: 0 auto;
 }
 
+.sectionOne-Felix {
+  background-color: white;
+  width: 40%;
+  height: 550px;
+  margin: 0px;
+  background-color: white;
+  border: 2px solid #f9f6fa;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px #f9f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionOne-Felix > h1 {
+  font-size: 45px;
+  color: red;
+  text-shadow: 2px 4px blue;
+}
+
 .sectionOne-Abraham {
   background-color: white;
-  width: 100%;
+  width: 55%;
   height: 550px;
   margin: 0px;
   background-color: white;
@@ -52,18 +72,47 @@ select:hover {
   cursor: pointer;
 }
 .graph {
-  width: 45%;
+  width: 420px;
   margin-top: -2%;
-  height: 50vh;
+  height: 600px;
 }
 
 .netRev {
   padding-bottom: 10%;
   margin-top: 5%;
 }
+@media (max-width: 768px) {
+  .sectionOne {
+    flex-direction: column;
+    width: 95%;
+  }
+  .graphRevenue {
+    flex-direction: column;
+  }
+  .graph {
+    width: 100%;
+    height: 350px;
+  }
+}
 
 @media (max-width: 1280px) {
   .Revenue {
     height: 45vh;
   }
+}
+
+/* section three */
+.sectionThree {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dara-3 {
+  width: 60%;
+}
+
+.ab-3 {
+  width: 40%;
 }
