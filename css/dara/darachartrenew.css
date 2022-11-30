@@ -1,0 +1,6 @@
+.chartdiv{
+    width: 8rem;
+    height: 4rem;
+    overflow: hidden;
+    background-color: aqua;
+}
