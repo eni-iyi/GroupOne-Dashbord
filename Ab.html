@@ -68,13 +68,16 @@
                   style="width: 50%; max-width: 500px"
                 ></canvas>
                 <span
-                  style="background-color: rgb(238, 9, 9); border-radius: 5px"
-                  >16.3%</span
-                >
+                  style="background-color: rgb(238, 9, 9); color:white; border-radius: 5px"
+                  >16.3%<iconify-icon
+                    icon="material-symbols:arrow-downward"
+                    style="color: white"
+                  ></iconify-icon>
+                </span>
               </div>
               <div class="netRev">
                 <p style="display: flex">
-                  <span> 3,526,56</span>
+                  <span style="margin-bottom: 7%"> 3,526,56</span>
                   <span style="color: green"
                     ><iconify-icon
                       icon="fluent-mdl2:checkbox-indeterminate"
@@ -84,7 +87,7 @@
                 </p>
                 <p style="margin-top: -15px">Net profit</p>
                 <p style="display: flex">
-                  <span>5,324,85</span>
+                  <span style="margin-top: 1%">5,324,85</span>
                   <span style="color: purple"
                     ><span
                       ><iconify-icon
@@ -93,7 +96,7 @@
                       ></iconify-icon></span
                   ></span>
                 </p>
-                <p style="margin-top: -15px">Net Revenue</p>
+                <p style="margin-top: -px">Net Revenue</p>
               </div>
             </div>
           </div>
@@ -135,7 +138,7 @@
     <script>
       var xValues = ["0", "2", "4", "6", "8", "10", "12"];
       var yValues = [2, 36, 22, 30, 12, 36, 35];
-      var barColors = "green";
+      var barColors = "#159947";
 
       new Chart("myGraph", {
         type: "line",
@@ -149,6 +152,25 @@
           ],
         },
         options: {
+          scales: {
+            xAxes: [
+              {
+                display: false,
+                gridLines: {
+                  drawBorder: false,
+                  display: false,
+                },
+              },
+            ],
+            yAxes: [
+              {
+                display: false,
+                gridLines: {
+                  display: false,
+                },
+              },
+            ],
+          },
           legend: { display: false },
           title: {
             display: true,
@@ -157,5 +179,6 @@
         },
       });
     </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </body>
 </html>
